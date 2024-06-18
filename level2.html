@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href = "index.html" class = "button main" style = "color: rgb(255, 255, 255);">Main Menu</a></li>
+                <li><a href = "regularCalculator.html" class = "button regular" style = "color: rgb(255, 255, 255);">Regular Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class = "levelTitle">
+        Level 2
+    </section>
+
+    <section class = "directions">
+        Input and evaluate the following expression: 4*50+9/3
+    </section>
+
+    <div class="container" data-winning-expression="4*50+9/3">
+        <div class="calculator">
+            <form>
+                <div class = "display">
+                    <!-- will display the result-->
+                    <input type="text" id="display" name="display" readonly>
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = ''">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+                    <input type="button" value="." onclick="display.value += '.'">
+                    <input type="button" value="/" onclick="display.value += '/'">
+                </div>
+                <div>
+                    <input type="button" class="num" value="7" onclick="display.value += '7'">
+                    <input type="button" class="num" value="8" onclick="display.value += '8'">
+                    <input type="button" id = "real9" class="num" value="9" onclick="display.value += '9'">
+                    <input type="button" value="*" onclick="display.value += '*'">
+                </div>
+                <div>
+                    <input type="button" class="num" value="4" onclick="display.value += '4'">
+                    <input type="button" class="num" value="5" onclick="display.value += '5'">
+                    <input type="button" class="num" value="6" onclick="display.value += '6'">
+                    <input type="button" value="-" onclick="display.value += '-'">
+                </div>
+                <div>
+                    <input type="button" class="num" value="1" onclick="display.value += '1'">
+                    <input type="button" class="num" value="2" onclick="display.value += '2'">
+                    <input type="button" class="num" value="3" onclick="display.value += '3'">
+                    <input type="button" value="+" onclick="display.value += '+'">
+                </div>
+                <div>
+                    <input type="button" id = "real00" class="num" value="00" onclick="display.value += '00'">
+                    <input type="button" class="num" value="0" onclick="display.value += '0'">
+                    <input type="button" value="=" class = "equal">
+                </div>
+            </form>
+        </div>
+    </div>
+        
+    <button class="image-button" id = "findSecretItemButton">
+        <img src="cow.png" id = "moo" class="cow2"alt="Button Image">
+    </button>
+
+    <input type="button" id = "fake9" value="9" class="num draggable button9">
+    <input type="button" id = "fake00" value="00" class="num draggable button00">
+
+
+    <section class = "hintContainer">
+        <li><a href="#" id="useHintButton" class="button hint" style="color: rgb(255, 255, 255);">Get Hint</a></li>
+    </section>
+
+        <div class = "hintText" id="displayHint" style="display: none;">
+            Is there something in the way of <br>clicking the buttons you need?
+        </div>
+
+    <div id="dynamicContent" style="display: none;">
+
+        <div class = "victoryTop">Level Complete!</div>
+        <div class = "victoryMain"></div>
+        <div class = "victoryMain2"></div>
+
+        <section class = "retryButton">
+            <li><a href = "level2.html" class = "button retry" style = "color: rgb(255, 255, 255);">Retry</a></li>
+        </section>
+
+        <section class = "nextLevelButton">
+            <li><a href = "level3.html" class = "button nextLevel" style = "color: rgb(255, 255, 255);">Next Level</a></li>
+        </section>
+
+        <img src="star.png" alt="Star" class="starMiddle">
+        <img src="star.png" alt="Star" class="starLeft">
+        <img src="star.png" alt="Star" class="starRight">
+
+    </div>
+
+    <div id = "starsAppearing1" style = "display: none;">
+        <img src="star2.png" alt="Star" class="starLeft">
+    </div>
+
+    <div id = "starsAppearing2" style = "display: none;">
+        <img src="star2.png" alt="Star" class="starRight">
+    </div>
+
+    <div id = "starsAppearing3" style = "display: none;">
+        <img src="star2.png" alt="Star" class="starMiddle">
+    </div>
+
+    <footer>gjenkn9 2024</footer>
+    <script src="draggable.js"></script>
+    <script src="winningLogic.js" defer></script>
+    <script src="coordinates9.js"></script>
+
+</body>
+</html>
