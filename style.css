@@ -319,7 +319,7 @@ form input.equal {
     z-index: 5; 
 }
 
-/* ------------ BANANA ------------- */
+/* ------------ COW ------------- */
 
 .image-button {
     border: none;
@@ -329,17 +329,6 @@ form input.equal {
     outline: none;
     display: inline-block;
     background-color: transparent; /* Ensure transparent background */
-}
-
-.cowInstructions{
-    white-space: nowrap;
-    position: absolute;
-    top: 50vmin;
-    left: calc(50% + 26vmin);
-    width: 40vmin;
-    height: 20vmin;
-    font-size: 1.8vmin;
-    text-align: center;
 }
 
 .image-button img {
@@ -358,7 +347,7 @@ form input.equal {
 .hintContainer{
     position: absolute;
     top: 36vmin;
-    left: calc(50% - 63vmin);
+    left: calc(50% - 51vmin);
 }
 
 .hintContainer :hover {
@@ -385,8 +374,8 @@ form input.equal {
 .hintText{
     position: absolute;
     top: 50vmin;
-    left: calc(50% - 77.7vmin);
-    width: 45vmin;
+    left: calc(50% - 62vmin);
+    width: 37vmin;
     height: 20vmin;
     font-size: 1.8vmin;
     background-color: hsl(0, 0%, 100%);
@@ -418,13 +407,11 @@ footer {
     cursor: move;
 }
 
-
-
 /* ----------------- LEVEL 1 ----------------- */
 .cow1{
     position: absolute;
     top: 36vmin;
-    left: calc(50% + 39.5vmin);
+    left: calc(50% + 33.5vmin);
     width: 12vmin; 
 }
 
@@ -432,14 +419,24 @@ footer {
 .hintText1{
     position: absolute;
     top: 58vmin;
-    width: 50vmin;
+    width: 30vmin;
     height: 5vmin;
-    font-size: 2vmin;
+    font-size:1.8vmin;
     background-color: rgb(255, 255, 255);
-    left: calc(50% - 79vmin);
+    left: calc(50% - 59vmin);
     text-align: center;
 }
 
+.cowInstructions{
+    white-space: nowrap;
+    position: absolute;
+    top: 50vmin;
+    left: calc(50% + 20vmin);
+    width: 40vmin;
+    height: 20vmin;
+    font-size: 1.8vmin;
+    text-align: center;
+}
 
 /* ----------------- LEVEL 2 ----------------- */
 .cow2{
@@ -448,7 +445,6 @@ footer {
     left: calc(50% - 18.6vmin);
     width: 6vmin;
 }
-
 
 .button9 {
     position: absolute;
